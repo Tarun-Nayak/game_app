@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="IMG_20210810_185534_106 (1).webp" />
+    <title>Tarun-code-area</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="game_console">
+        <div id="rail"></div>
+        <div id="combo_display">
+            <span id="combo_span">0</span>
+            <br /> BLOCK <br />COMBO
+        </div>
+        <div id="paddle">
+            <div class="pad_control pad_left"></div>
+            <div class="pad_control pad_center"></div>
+            <div class="pad_control pad_right"></div>
+        </div>
+        <div id="ball"></div>
+        <div id="start_message">
+            <img class="ib_logo" src="https://contentservice.mc.reyrey.net/image_v1.0.0/?id=92eee9ae-1aeb-5bf5-834a-b7db2b720ec7&637741412320394569" alt="Ice Breaker Logo with Icicles" />
+            <br />
+            <span class="tap_to_start">TAP TO START</span>
+
+            <div class="game_stats">
+                <p>
+                    HIGH SCORE<br />
+                    <span class="hi_score">0</span>
+                </p>
+                <span class="game_round">0</span>
+                <span class="game_blocks">0</span>
+                <span class="game_combo">0</span>
+                <span class="game_score">0</span>
+            </div>
+        </div>
+        <div id="mute_btn" onclick="muteSound(this)">
+            <span class="material-icons-outlined">volume_up</span>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=73702d54-159c-5403-9706-99824dee8d9e" id="gem_collect" preload></audio>
+    <audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=0c93115f-e01d-540b-9109-ae2229e92233" id="bg_music" preload loop></audio>
+    <audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=992018b3-27b2-5c3b-9d8f-ec6e59cb24ad" id="miss_ball" preload></audio>
+    <audio src="http://contentservice.mc.reyrey.net/audio_v1.0.0/?id=c187b09c-169a-588a-bc72-3069b29d5101" id="you_died" preload></audio>
+
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="index.js"></script>
+</body>
+
+</html>
